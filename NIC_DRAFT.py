@@ -142,41 +142,41 @@ def recommend_schemes(search_terms, age, social_category, gender, domicile_of_tr
 
 
 # command line arguments
-# def parse_arguments():
-#     parser = argparse.ArgumentParser(description="Scheme Recommendation System")
-#     parser.add_argument("search_terms", nargs="+", help="Search terms for scheme recommendation")
-#     parser.add_argument("--age", help="Age range (e.g., '21-25')")
-#     parser.add_argument("--social_category", help="Social category (e.g., 'ST')")
-#     parser.add_argument("--gender", help="Gender (e.g., 'M')")
-#     parser.add_argument("--domicile_of_tripura", help="Domicile of Tripura (e.g., 'Y' or 'N')")
-#     return parser.parse_args()
-
-# def main():
-#     # Parse command-line arguments
-#     args = parse_arguments()
-
-#     # Call the recommend_schemes function with command-line arguments
-#     recommend_schemes(args.search_terms, args.age, args.social_category, args.gender, args.domicile_of_tripura)
-
-# if __name__ == "__main__":
-#     main()
-
-
-# geting input from user
-def get_user_input():
-    search_terms = input("Enter search terms (separated by space): ").split()
-    age = input("Enter age range: ")
-    social_category = input("Enter social category (SC/ST/OBC): ")
-    gender = input("Enter gender (M/F/T): ")
-    domicile_of_tripura = input("Is domicile of Tripura? (Y/N): ")
-    return search_terms, age, social_category, gender, domicile_of_tripura
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="Scheme Recommendation System")
+    parser.add_argument("--search_terms", nargs="+", help="Search terms for scheme recommendation")
+    parser.add_argument("--age", help="Age range (e.g., '21-25')")
+    parser.add_argument("--social_category", help="Social category (e.g., 'ST')")
+    parser.add_argument("--gender", help="Gender (e.g., 'M')")
+    parser.add_argument("--domicile_of_tripura", help="Domicile of Tripura (e.g., 'Y' or 'N')")
+    return parser.parse_args()
 
 def main():
-    # Get user input
-    search_terms, age, social_category, gender, domicile_of_tripura = get_user_input()
+    # Parse command-line arguments
+    args = parse_arguments()
 
-    # Call the recommend_schemes function with user input
-    recommend_schemes(search_terms, age, social_category, gender, domicile_of_tripura)
+    # Call the recommend_schemes function with command-line arguments
+    recommend_schemes(args.search_terms, args.age, args.social_category, args.gender, args.domicile_of_tripura)
 
 if __name__ == "__main__":
     main()
+
+
+# geting input from user
+# def get_user_input():
+#     search_terms = input("Enter search terms (separated by space): ").split()
+#     age = input("Enter age range: ")
+#     social_category = input("Enter social category (SC/ST/OBC): ")
+#     gender = input("Enter gender (M/F/T): ")
+#     domicile_of_tripura = input("Is domicile of Tripura? (Y/N): ")
+#     return search_terms, age, social_category, gender, domicile_of_tripura
+
+# def main():
+#     # Get user input
+#     search_terms, age, social_category, gender, domicile_of_tripura = get_user_input()
+
+#     # Call the recommend_schemes function with user input
+#     recommend_schemes(search_terms, age, social_category, gender, domicile_of_tripura)
+
+# if __name__ == "__main__":
+#     main()
