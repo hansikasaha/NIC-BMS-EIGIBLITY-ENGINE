@@ -1,16 +1,19 @@
-# NIC
-BMS Eligibiity Recommendation Engine
+# NIC PROJECT
+## BMS Eligibiity Recommendation Engine
 
-### To run the code, follow the commands
-To run simple script or with user input <br/>
-run command: python NIC_DRAFT.py <br/>
+• Developed this recommendation system by integrating a recommendation API into a React frontend to
+enhance interactivity and usability.
 
-To run script with command line Argument <br>
-run command: python NIC_DRAFT.py --search_terms "Mukhya" --age "21-25" --social_category "ST" --gender "M" --domicile_of_tripura "Y"
+• This system effectively recommends the most significant schemes based on user input from the provided
+database, enhancing the user experience through a intuitive React interface.
 
-To run FastAPI app <br/>
-run command: python main.py || uvicorn main:app --reload
 
-To install all required dependencies and modules <br/>
-run command: pip install -r requirements.txt
+
+## To run this project, run the following commands
+
+1. npm i -- to install all dependencies <br/>
+
+2. npm run start -- to start app
+
+
 
